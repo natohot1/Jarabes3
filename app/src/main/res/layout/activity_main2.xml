@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/car_fer23"
+    tools:context="com.example.felix.jarabes.Main2Activity">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bolivia"
+        android:id="@+id/checkdBolivia"
+        android:focusable="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:enabled="false"
+        android:checked="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="España"
+        android:id="@+id/checkdEspa"
+        android:textColor="@color/colorPrimaryDark"
+        android:focusable="false"
+        android:enabled="false"
+        android:checked="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/tx_q_buscas"
+        android:id="@+id/textCC"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/checkdEspa"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/autoCompleteTextView"
+        android:layout_gravity="center"
+        android:hint="DOS O TRES LETRAS SUFICIENTE"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/textCC"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/bor"
+        android:layout_toStartOf="@+id/bor" />
+    <ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/bor"
+    android:layout_gravity="right|center_vertical"
+    android:src="@android:drawable/ic_delete"
+    android:layout_alignBottom="@+id/autoCompleteTextView"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+
+
+    <Button
+    android:text="ANALGESICOS"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/btnAnalgesicos"
+    android:layout_alignBaseline="@+id/btnAntibiticos"
+    android:layout_alignBottom="@+id/btnAntibiticos"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+
+
+
+
+
+    <Button
+        android:text="ANTITUSIVOS MUCOLITICOS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTos"
+        android:paddingTop="20dp"
+        android:layout_alignTop="@+id/btnAntialergicos"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="ANTIBIOTICOS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAntibiticos"
+        android:layout_marginBottom="18dp"
+        android:layout_above="@+id/btnAntialergicos"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="ANTIALERGICOS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAntialergicos"
+        android:paddingTop="20dp"
+        android:layout_marginBottom="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/car_fer23"
+    tools:context="com.example.felix.jarabes.Dedicatoria">
+    <TextView
+        android:id="@+id/txdAgradcer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="15dp"
+        android:textColor="#080808"
+        android:textStyle="italic"
+        android:gravity="center"
+        />
+
+    <Button
+        android:text="@string/continuar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:onClick="onClick"
+        android:id="@+id/continuar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>

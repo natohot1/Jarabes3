@@ -1,0 +1,32 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/car_fer23"
+    tools:context="com.example.felix.jarabes.Colaboradores">
+
+    <TextView
+        android:id="@+id/txeColaborador"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#030100"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        android:gravity="center"
+        />
+
+    <Button
+        android:text="@string/continuar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:onClick="onClick"
+        android:id="@+id/continuar2"
+        tools:layout_editor_absoluteY="447dp"
+        tools:layout_editor_absoluteX="139dp"
+        android:layout_alignBottom="@+id/txeColaborador"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

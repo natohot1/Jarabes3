@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/hospi"
+    android:clickable="true"
+    tools:context="com.example.felix.jarabes.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/texmio"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="126dp"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saltar"
+        android:id="@+id/button"
+        android:layout_marginBottom="129dp"
+        android:onClick="setContentView"
+        android:textSize="35dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:background="#00ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/por"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtdAutor"
+        android:textColor="#F5FAFA"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:id="@+id/por" />
+
+    <TextView
+        android:text="@string/colaboradores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#F5FAFA"
+        android:layout_marginTop="30dp"
+        android:id="@+id/txtdColaborador"
+        android:layout_below="@+id/txtdAutor"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#F5FAFA"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="74dp"
+        android:id="@+id/txtdAutor"
+        android:text="@string/autor"
+        android:layout_below="@+id/texmio"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

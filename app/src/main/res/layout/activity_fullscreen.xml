@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hospi"
+    android:clickable="true"
+    tools:context="com.example.felix.jarabes.FullscreenActivity">
+
+    <TextView
+        android:text="@string/jarabeMayuscula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic"
+        android:id="@+id/txtJarabe"
+        android:layout_above="@+id/texmio"
+        android:layout_alignRight="@+id/bteautor"
+        android:layout_alignEnd="@+id/bteautor"
+        android:layout_marginBottom="91dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/texmio"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        />
+
+
+
+    <Button
+        android:text="@string/colaboradores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textColor="#F5FAFA"
+        android:background="#00ffffff"
+        android:id="@+id/bteColaborador"
+        android:layout_below="@+id/por"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp" />
+
+    <Button
+        android:text="@string/autor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bteautor"
+        android:textColor="#F5FAFA"
+        android:background="#00ffffff"
+        android:onClick="onClick"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="46dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saltar"
+        android:id="@+id/button"
+        android:onClick="setContentView"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:background="#00ffffff"
+        android:layout_marginBottom="13dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp" />
+
+
+    <TextView
+        android:text="@string/por"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#F5FAFA"
+        android:id="@+id/por"
+        android:layout_alignTop="@+id/bteautor"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

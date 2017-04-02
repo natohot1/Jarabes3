@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.felix.jarabes.Presentacion">
+    <item
+        android:id="@+id/españa"
+        android:title="@string/banespa"
+        android:icon="@drawable/bandera"
+        android:orderInCategory="1"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/bolivia"
+        android:title="@string/banbolivia"
+        android:icon="@drawable/banbolivia"
+        android:orderInCategory="2"
+        app:showAsAction="always"/>
+</menu>
